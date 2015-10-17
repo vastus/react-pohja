@@ -1,0 +1,30 @@
+{
+  "name": "react-pohja",
+  "version": "1.0.0",
+  "description": "Boilerplate for React.js using Webpack and Babel",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react.js",
+    "webpack",
+    "babel",
+    "boilerplate",
+    "getting",
+    "started"
+  ],
+  "author": "Juho Hautala <juho.hautala@helsinki.fi>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
+}
