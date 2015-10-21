@@ -1,9 +1,14 @@
 module.exports = {
-  entry: __dirname + '/app/main.js',
+  context: __dirname + '/app',
+
+  entry: {
+    html: './index.html',
+    javascript: './main.js',
+  },
 
   output: {
-    path: __dirname + '/public/js',
-    filename: 'bundle.js'
+    path: __dirname + '/public',
+    filename: 'bundle.js',
   },
 
   module: {
@@ -11,8 +16,12 @@ module.exports = {
       {
         test: /.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel'
-      }
-    ]
-  }
+        loaders: ['react-hot', 'babel-loader'],
+      },
+      {
+        test: /\.html$/,
+        loader: 'file?name=[name].[ext]',
+      },
+    ],
+  },
 };
